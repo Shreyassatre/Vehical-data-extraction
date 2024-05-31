@@ -1,0 +1,12 @@
+opencv-python
+matplotlib
+pillow
+streamlit
+easyocr
+pytesseract
+langchain_groq
+langchain
+langchain_community
+numpy
+pandas
+torch

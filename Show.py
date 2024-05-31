@@ -15,7 +15,6 @@ sorted_data = data.sort_values(by='non_nan_count', ascending=False)
 sorted_data = sorted_data.drop(columns=['non_nan_count'])
 
 st.write('OpenSpace Services ML Assignment by Shreyas Satre')
-st.write('Note: This is just representation of submission.csv data')
 
 st.title('Vehicle Information Dashboard')
 
