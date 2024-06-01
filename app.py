@@ -18,7 +18,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(f"Using device: {device}")
 reader = easyocr.Reader(['en'], gpu=device.type == 'cuda')
 
-# extracting text using Tesseract
+# Image Preprocessing and extracting text using Tesseract
 def preprocess_and_extract_text_tesseract(image_path):
     image = cv2.imread(image_path)
 
@@ -76,7 +76,7 @@ def extract_text_easyocr(image_path):
 # Features Extraction using LLM(Llama-3)
 def extract_important_info(easyocr_text, tesseract_text):
     llm = ChatGroq(
-        groq_api_key="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", #Note: I will be deleting this key after 3rd june 2024
+        groq_api_key="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", #Note: I will be deleting this key after 9th june 2024
         model_name="Llama3-70b-8192"
     )
 
@@ -89,7 +89,7 @@ def extract_important_info(easyocr_text, tesseract_text):
         And here is the extracted information from EasyOCR:
         {easyocr_text}
 
-        You can use both texts and extract important information.
+        You can use both texts (tesseract_text, easyocr_text) and extract important information. Note: Both texts are extracted from same image.
         
         -----------------------------------------------------------
 
