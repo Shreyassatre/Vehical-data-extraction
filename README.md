@@ -145,31 +145,31 @@ pip install requirements.txt
 ```
 
 you'll need to have Python and the following libraries installed:
-* OpenCV
-* NumPy
-* Pillow
-* Pytesseract
-* EasyOCR
-* Pandas
-* PyTorch
-* LangChain
+- OpenCV
+- NumPy
+- Pillow
+- Pytesseract
+- EasyOCR
+- Pandas
+- PyTorch
+- LangChain
 
 ## Output
-The output.csv file will contain the following columns:
-* file_name
-* tesseract_text
-* easyocr_text
-* registration number
-* registration date
-* manufacturing date
-* chassis number
-* engine number
-* name
+The output.csv file contains the following columns:
+- file_name
+- tesseract_text
+- easyocr_text
+- registration number
+- registration date
+- manufacturing date
+- chassis number
+- engine number
+- name
 
 ### Streamlit web interface output:
-You can find representation of Data and compare the extracted and image here:
+You can find representation of Data and compare the extracted text and image here:
 https://vehical-rc-info-extraction.streamlit.app/
 
 Example output image:
-![alt text](output_images/streamlit-out.png)
+![alt text](output_images/streamlit-output.png)
 
