@@ -126,6 +126,7 @@ def extract_important_info(easyocr_text, tesseract_text):
 ```
 
 LLM output:
+
 ![alt text](output_images/LLM-output.png)
 
 ### CSV Generation
