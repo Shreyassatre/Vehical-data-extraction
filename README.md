@@ -125,6 +125,9 @@ def extract_important_info(easyocr_text, tesseract_text):
     return info_dict
 ```
 
+LLM output:
+![alt text](output_images/LLM-output.png)
+
 ### CSV Generation
 The final step involves generating a CSV file that contains the extracted text from both OCR methods and the parsed information.
 
