@@ -2,7 +2,8 @@
 
 This project involves extracting and parsing important information from images using two OCR methods: Tesseract and EasyOCR. The extracted text from both methods is then processed using a large language model (LLM) to extract relevant details such as registration number, registration date, manufacturing date, chassis number, engine number, and name. The results are saved in a CSV file.
 
-Python Colab Notebook : https://colab.research.google.com/drive/1INlE874qixhAh4k28UI5yZnD-ohHs0Rk?usp=sharing (Note: Create new folder called 'data' in colab files and upload all dataset images into it.)
+Python Colab Notebook : https://colab.research.google.com/drive/1INlE874qixhAh4k28UI5yZnD-ohHs0Rk?usp=sharing 
+(Note: Create new folder called 'data' in colab files and upload all dataset images into it.)
 
 ## Table of Contents
 - [Overview](#overview)
@@ -12,7 +13,7 @@ Python Colab Notebook : https://colab.research.google.com/drive/1INlE874qixhAh4k
   - [Text Extraction](#text-extraction)
   - [Important Information Extraction](#important-information-extraction)
   - [CSV Generation](#csv-generation)
-- [Installation](#installation)
+- [Installation and Setup](#installation-and-setup)
 - [Output](#output)
 
 ## Overview
@@ -136,23 +137,25 @@ def create_csv_with_text_and_image_names(directory, csv_filename):
     df.to_csv(csv_filename, index=False)
 ```
 
-## Installation
+## Installation and Setup
 
 All dependencies are listed in requirements.txt file, to install required python libraries run the below command: 
 
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
-you'll need to have Python and the following libraries installed:
-- OpenCV
-- NumPy
-- Pillow
-- Pytesseract
-- EasyOCR
-- Pandas
-- PyTorch
-- LangChain
+To get output.csv file with extracted important features, run app.py:
+
+```bash
+python app.py
+```
+
+To get interactive output on web interface, run Show.py using streamlit:
+
+```bash
+streamlit run Show.py
+```
 
 ## Output
 The output.csv file contains the following columns:
@@ -168,6 +171,7 @@ The output.csv file contains the following columns:
 
 ### Streamlit web interface output:
 You can find representation of Data and compare the extracted text and image here:
+
 https://vehical-rc-info-extraction.streamlit.app/
 
 Example output image:
