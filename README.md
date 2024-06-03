@@ -1,8 +1,9 @@
 # Vehical Information Extraction and Information Parsing from Image
 
-This project involves extracting and parsing important information from images using two OCR methods: Tesseract and EasyOCR. The extracted text from both methods is then processed using a large language model (LLM) to extract relevant details such as registration number, registration date, manufacturing date, chassis number, engine number, and name. The results are saved in a CSV file.
+This project involves extracting and parsing important information from images by image preprocessing and using two OCR methods: Tesseract and EasyOCR. The extracted text from both methods is then processed using a large language model (LLM) to extract relevant details such as registration number, registration date, manufacturing date, chassis number, engine number, and name. The results are saved in a CSV file.
 
 Python Colab Notebook : https://colab.research.google.com/drive/1INlE874qixhAh4k28UI5yZnD-ohHs0Rk?usp=sharing 
+
 (Note: Create new folder called 'data' in colab files and upload all dataset images into it.)
 
 ## Table of Contents
@@ -21,8 +22,9 @@ Python Colab Notebook : https://colab.research.google.com/drive/1INlE874qixhAh4k
 The project uses computer vision and natural language processing techniques to automate the extraction of key information from document images. The workflow involves:
 1. Preprocessing images for better OCR results.
 2. Extracting text using Tesseract and EasyOCR.
-3. Parsing important information from the extracted text using a language model.
+3. Parsing important information from the extracted text using a large language model.
 4. Storing the results in a structured CSV file.
+5. Rpresenting CSV data on streamlit web-interface
 
 DFD Diagram:
 ![alt text](output_images/DFD%20diagram.png)
